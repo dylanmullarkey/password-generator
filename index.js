@@ -93,14 +93,14 @@ const characters = [
 ]
 
 const generateBtn = document.getElementById("button-el")
-const passwordField1 = document.getElementById("pwd-field1")
-const passwordField2 = document.getElementById("pwd-field2")
+const password1 = document.getElementById("pswd1")
+const password2 = document.getElementById("pswd2")
 let useSymbols = true
 let useNumbers = true
 let passwordLength = 15
 // generateBtn.addEventListener("click", showPasswords())
 
-// passwordField1.innerText = generatePassword()
+// password1.innerText = generatePassword()
 function generatePasswords() {
     let passwords = []
     let password = ""
@@ -118,6 +118,6 @@ function generatePasswords() {
 
 function showPasswords(){
     let passwords = generatePasswords()
-    passwordField1.innerText = passwords[0]
-    passwordField2.innerText = passwords[1]
+    password1.innerText = passwords[0]
+    password2.innerText = passwords[1]
 }
