@@ -95,11 +95,16 @@ const characters = [
 const generateBtn = document.getElementById("button-el")
 const password1 = document.getElementById("pswd1")
 const password2 = document.getElementById("pswd2")
+const slider = document.getElementById("pswd-range")
+
 let useSymbols = true
 let useNumbers = true
-let passwordLength = 15
+let passwordLength = slider.value
 // generateBtn.addEventListener("click", showPasswords())
 
+slider.addEventListener("input", (event) => {
+    
+})
 // password1.innerText = generatePassword()
 function generatePasswords() {
     let passwords = []
